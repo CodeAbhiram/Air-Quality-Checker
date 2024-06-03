@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        
+        
+    <h1 class="h">AIR QUALITY CHECKER</h1>
+    <div class="input-cont">
+        
+        <p>latitude</p>
+        <input class="input" id="linput" type="text" placeholder="latitude">
+        <p>longitude</p>
+        <input class="input"id="loinput" type="text" placeholder="longitude">
+    </div>
+
+    <br>
+    <button class="b" id="b"
+    onclick="openpopup()" type="submit">Check air quality</button>
+
+</div>
+<div class="popup" id="popup">
+    <p>
+        AQI :<span id="aqi"></span>
+    </p>
+    <p>
+        CO :<span id="co"></span>
+    </p>
+    <p>
+        NO2 :<span id="no2"></span>
+    </p>
+    <p>
+        O3 :<span id="o3"></span>
+    </p>
+    <p>
+        PM2.5 :<span id="pm2"></span>
+    </p>
+    <p>
+        city :<span id="cityname"></span>
+    </p>
+    <p>
+        countrycode :<span id="countrycode"></span>
+    </p>
+    <button class="bu" id="bu" onclick="closepopup()">OK</button>
+</div>
+<div id="overlay"></div>
+<script src="weather.js"></script>
+</body>
+</html>
